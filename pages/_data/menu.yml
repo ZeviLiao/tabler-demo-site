@@ -16,6 +16,9 @@ base:
     empty:
       title: Empty page
       url: empty.html
+    test:
+      title: Test page
+      url: test.html
     blank:
       title: Blank page
       url: blank.html
