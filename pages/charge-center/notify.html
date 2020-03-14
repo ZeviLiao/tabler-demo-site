@@ -4,15 +4,19 @@ title: Empty page
 
 <div class="card">
 	<div class="card-header">
-		<h3 class="card-title">Basic form</h3>
+		<h3 class="card-title">公告管理</h3>
 	</div>
 	<div class="card-body">
+		<a href="#" class="btn btn-secondary mb-3">
+			{% include ui/icon.html icon="plus" %} 新增公告
+		</a>
 		<table class="table">
 			<thead>
 				<tr>
 					<th>Firstname</th>
 					<th>Lastname</th>
 					<th>Email</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -20,21 +24,35 @@ title: Empty page
 					<td>John</td>
 					<td>Doe</td>
 					<td>john@example.com</td>
+					<td>
+						{% include ui/button.html text="Edit" modal-id="report" %}
+						<a href="#" class="btn btn-ghost-danger">Delete</a>
+					</td>
 				</tr>
 				<tr>
 					<td>Mary</td>
 					<td>Moe</td>
 					<td>mary@example.com</td>
+					<td>
+						<a href="#" class="btn btn-link  btn-space ">
+							Edit
+						</a>
+						<a href="#" class="btn btn-ghost-danger">Delete</a>
+					</td>
 				</tr>
 				<tr>
 					<td>July</td>
 					<td>Dooley</td>
 					<td>july@example.com</td>
+					<td>
+						<a href="#" class="btn btn-link  btn-space ">
+							Edit
+						</a>
+						<a href="#" class="btn btn-ghost-danger">Delete</a>
+					</td>
 				</tr>
 			</tbody>
-        </table>
-        <div class="form-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
+		</table>
 	</div>
 </div>
+{% include ui/modal.html modal-id="report" size="lg" %}

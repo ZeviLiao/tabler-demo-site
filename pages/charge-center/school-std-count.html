@@ -4,37 +4,99 @@ title: Empty page
 
 <div class="card">
 	<div class="card-header">
-		<h3 class="card-title">Basic form</h3>
+		<h3 class="card-title">修改學校人數</h3>
 	</div>
 	<div class="card-body">
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
-				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-				</tr>
-			</tbody>
-        </table>
-        <div class="form-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
+		<div class="card">
+			<ul class="nav nav-tabs" data-toggle="tabs">
+				<li class="nav-item">
+					<a
+						href="#tabs-home-ex1"
+						class="nav-link active"
+						data-toggle="tab"
+						>Home</a
+					>
+				</li>
+				<li class="nav-item">
+					<a href="#tabs-profile-ex1" class="nav-link" data-toggle="tab"
+						>Profile</a
+					>
+				</li>
+			</ul>
+			<div class="card-body">
+				<div class="tab-content">
+					<div class="tab-pane active show" id="tabs-home-ex1">
+						<div>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Firstname</th>
+										<th>Lastname</th>
+										<th>Email</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>John</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+									<tr>
+										<td>Mary</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+									<tr>
+										<td>July</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="form-footer">
+								<button type="submit" class="btn btn-primary">
+									Submit
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tabs-profile-ex1">
+						<div>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Firstname</th>
+										<th>Lastname</th>
+										<th>Email</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>bb</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+									<tr>
+										<td>cc</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+									<tr>
+										<td>dd</td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+										<td><input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder"></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="form-footer">
+								<button type="submit" class="btn btn-primary">
+									Submit
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

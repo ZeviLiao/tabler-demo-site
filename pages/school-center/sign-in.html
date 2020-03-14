@@ -3,5 +3,11 @@ title: Sign in
 ---
 
 <div class="container-tight py-6">
-	{% include cards/sign-in.html show-header="1" %}
+	<form class="card card-md" action="{{ site.base }}" method="get">
+		<div class="card-body">
+			<h2 class="mb-5 text-center">各申請學校登入</h2>
+	
+			{% include cards/sign-in.html show-header="1" %}
+		</div>
+	</form>
 </div>
