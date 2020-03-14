@@ -1,44 +1,76 @@
-home:
+student:
   url: app-progress/index.html
   title: 學生審查進度查詢
   icon: home
 
 
-docs:
-  url: school-center/index.html
+school:
   title: 各校登入
   icon: check-square
   children:
-    empty:
-      title: Empty page
-      url: empty.html
-    test:
-      title: Test page
-      url: test.html
+    signin:
+      title: 登入
+      url: school-center/sign-in.html
+    index:
+      title: 學校資訊
+      url: school-center/index.html
+    appdoc:
+      title: 申請文件管理
+      url: school-center/app-doc.html
+    approve:
+      title: 核撥助學金給學生已完成確認
+      url: school-center/approve.html
+    schoolinfo:
+      title: 修改學校資訊
+      url: school-center/school-info.html
+    progressreport:
+      title: 查詢進度與列印報表
+      url: school-center/progress-report.html
 
-faq:
-  url: charge-center/index.html
+center:
   title: 承辦中心登入
   icon: check-square
   children:
-    empty:
-      title: Empty page
-      url: empty.html
-    test:
-      title: Test page
-      url: test.html
+    signin:
+      title: 登入
+      url: charge-center/sign-in.html
+    index:
+      title: 承辦中心資訊
+      url: charge-center/index.html
+    centerinfo:
+      title: 修改承辦中心資訊
+      url: charge-center/center-info.html
+    progressreport:
+      title: 查詢進度與列印報表
+      url: charge-center/progress-report.html
+    schoolstdcount:
+      title: 修改學校人數
+      url: charge-center/school-std-count.html
+    sendmail:
+      title: 寄送郵件
+      url: charge-center/send-mail.html
+    notify:
+      title: 公告管理
+      url: charge-center/notify.html
 
-undertaker:
-  url: indigenous-center/index.html
+
+indigenous:
+  url: index.html
   title: 原住民委員登入
   icon: check-square
   children:
-    empty:
-      title: Empty page
-      url: empty.html
-    test:
-      title: Test page
-      url: test.html
+    signin:
+      title: 登入
+      url: indigenous-center/sign-in.html
+    index:
+      title: 原住民委員
+      url: indigenous-center/index.html
+    cities:
+      title: 各縣市申請進度
+      url: indigenous-center/cities.html
+    progressreport:
+      title: 查詢進度與列印報表
+      url: indigenous-center/progress-report.html
 
 
 #changelog:
