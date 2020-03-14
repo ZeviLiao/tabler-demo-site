@@ -63,12 +63,12 @@ indigenous:
     signin:
       title: 登入
       url: indigenous-center/sign-in.html
-    index:
-      title: 原住民委員
-      url: indigenous-center/index.html
     cities:
       title: 各縣市申請進度
       url: indigenous-center/cities.html
+    index:
+      title: 單位資訊
+      url: indigenous-center/unit-info.html
     progressreport:
       title: 查詢進度與列印報表
       url: indigenous-center/progress-report.html

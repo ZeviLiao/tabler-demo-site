@@ -6,53 +6,104 @@ title: Empty page
 	<div class="card-header">
 		<h3 class="card-title">公告管理</h3>
 	</div>
-	<div class="card-body">
+	<div class="card-body border-bottom py-3">
 		<a href="#" class="btn btn-secondary mb-3">
-			{% include ui/icon.html icon="plus" %} 新增公告
+			{% include ui/icon.html icon="plus" %} 新增
 		</a>
-		<table class="table">
+
+		<div class="d-flex">
+			<div class="text-muted">
+				Show
+				<div class="mx-2 d-inline-block">
+					<input
+						type="text"
+						class="form-control form-control-sm"
+						value="8"
+						size="3"
+					/>
+				</div>
+				entries
+			</div>
+
+			<div class="ml-auto text-muted">
+				Search:
+				<div class="ml-2 d-inline-block">
+					<input type="text" class="form-control form-control-sm" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="table-responsive">
+		<table class="table card-table table-vcenter text-nowrap datatable">
 			<thead>
 				<tr>
-					<th>Firstname</th>
-					<th>Lastname</th>
-					<th>Email</th>
+					<th class="w-1">
+						<input
+							class="form-check-input m-0 align-middle"
+							type="checkbox"
+						/>
+					</th>
+					<th class="w-1">
+						No. {% include ui/icon.html icon="chevron-up" class="icon-sm
+						text-dark icon-thick" %}
+					</th>
+					<th>Invoice Subject {% include ui/icon.html icon="code" %}</th>
+					<th>VAT No. {% include ui/icon.html icon="code" %}</th>
+					<th>Created {% include ui/icon.html icon="code" %}</th>
+					<th>Status {% include ui/icon.html icon="code" %}</th>
+					<th>Price {% include ui/icon.html icon="code" %}</th>
 					<th></th>
 				</tr>
 			</thead>
+
 			<tbody>
+				{% for invoice in site.data.invoices limit: 8 %}
 				<tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
 					<td>
+						<input
+							class="form-check-input m-0 align-middle"
+							type="checkbox"
+							aria-label="Select invoice"
+						/>
+					</td>
+					<td>
+						<span class="text-muted"
+							>00{{ forloop.index | plus: 1400 }}</span
+						>
+					</td>
+					<td>
+						<a href="invoice.html" class="text-reset" tabindex="-1"
+							>{{ invoice.name }}</a
+						>
+					</td>
+	
+					<td>
+						{{ invoice.vat-no }}
+					</td>
+					<td>
+						{{ invoice.date }}
+					</td>
+					<td>
+						<span class="status-icon bg-{{ invoice.status }}"></span> {{
+						invoice.status-name }}
+					</td>
+					<td>{{ invoice.price }}</td>
+
+					<td class="text-right">
 						{% include ui/button.html text="Edit" modal-id="report" %}
 						<a href="#" class="btn btn-ghost-danger">Delete</a>
 					</td>
 				</tr>
-				<tr>
-					<td>Mary</td>
-					<td>Moe</td>
-					<td>mary@example.com</td>
-					<td>
-						<a href="#" class="btn btn-link  btn-space ">
-							Edit
-						</a>
-						<a href="#" class="btn btn-ghost-danger">Delete</a>
-					</td>
-				</tr>
-				<tr>
-					<td>July</td>
-					<td>Dooley</td>
-					<td>july@example.com</td>
-					<td>
-						<a href="#" class="btn btn-link  btn-space ">
-							Edit
-						</a>
-						<a href="#" class="btn btn-ghost-danger">Delete</a>
-					</td>
-				</tr>
+				{% endfor %}
 			</tbody>
 		</table>
 	</div>
+	<div class="card-footer d-flex align-items-center">
+		<p class="m-0 text-muted">
+			Showing <span>1</span> to <span>8</span> of <span>16</span> entries
+		</p>
+		{% include ui/pagination.html class="m-0 ml-auto" %}
+	</div>
 </div>
+
 {% include ui/modal.html modal-id="report" size="lg" %}
