@@ -26,17 +26,4 @@
 			<button type="submit" class="btn btn-primary btn-block">Sign in</button>
 		</div>
 	</div>
-
-	{% include ui/hr.html text="or" %}
-
-	<div class="card-body">
-		<div class="btn-list">
-			{% include ui/button.html color="secondary" block=true icon="brand/github" icon-color="github" text="Login with Github" %}
-			{% include ui/button.html color="secondary" block=true icon="brand/twitter" icon-color="twitter" text="Login with Twitter" %}
-		</div>
-	</div>
 </form>
-
-<div class="text-center text-muted">
-	Don't have account yet? <a href="{{ site.base }}/sign-up.html" tabindex="-1">Sign up</a>
-</div>

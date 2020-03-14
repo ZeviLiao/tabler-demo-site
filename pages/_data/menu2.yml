@@ -1,0 +1,53 @@
+home:
+  url: app-progress/index.html
+  title: 學生審查進度查詢
+  icon: home
+
+
+docs:
+  url: school-center/index.html
+  title: 各校登入
+  icon: check-square
+  children:
+    empty:
+      title: Empty page
+      url: empty.html
+    test:
+      title: Test page
+      url: test.html
+
+faq:
+  url: charge-center/index.html
+  title: 承辦中心登入
+  icon: check-square
+  children:
+    empty:
+      title: Empty page
+      url: empty.html
+    test:
+      title: Test page
+      url: test.html
+
+undertaker:
+  url: indigenous-center/index.html
+  title: 原住民委員登入
+  icon: check-square
+  children:
+    empty:
+      title: Empty page
+      url: empty.html
+    test:
+      title: Test page
+      url: test.html
+
+
+#changelog:
+#  url: changelog.html
+#  title: Changelog
+#  icon: file-plus
+#  label: v1.0
+
+#components:
+#  url: components.html
+#  title: Components
+#  icon: truck
